@@ -6,12 +6,6 @@ from traceback import print_exc
 app = Flask(__name__)
 app.secret_key = 'thisisasecretkeyforgaanaapiokbye!'
 
-
-@app.route('/')
-def home():
-    return redirect("https://cyberboysumanjay.github.io/GaanaAPI/")
-
-
 @app.route('/result/', methods=['GET', 'POST'])
 def result():
     data = ''
